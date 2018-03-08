@@ -72,6 +72,7 @@ var DownloadLink = function (_Component) {
         style: this.props.style,
         className: this.props.className,
         href: "javascript:void(0)",
+        onTouchStart: this.handleDownloadClick.bind(this),
         onClick: this.handleDownloadClick.bind(this)
       }, this.props.label);
     }
